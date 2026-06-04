@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyRIDE — Privacy Policy</title>
+  <style>
+    :root {
+      --accent: #00CC55;
+      --bg: #0A0A0A;
+      --card: #111111;
+      --text: #E8E8E8;
+      --sub: #888888;
+      --border: #222222;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    header .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 1px;
+    }
+    header .subtitle {
+      font-size: 12px;
+      color: var(--sub);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .lang-bar {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .lang-btn {
+      padding: 5px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--sub);
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.15s;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      font-weight: 700;
+    }
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+    h1 { font-size: 24px; color: var(--accent); margin-bottom: 6px; }
+    .meta { color: var(--sub); font-size: 12px; margin-bottom: 32px; }
+    h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin: 28px 0 10px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul { margin: 8px 0 12px 20px; }
+    ul li { margin-bottom: 6px; color: var(--text); }
+    .badge {
+      display: inline-block;
+      background: rgba(0,204,85,0.12);
+      border: 1px solid rgba(0,204,85,0.3);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    a { color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--sub);
+      font-size: 11px;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">MyRIDE</div>
+    <div class="subtitle">by RAIDO Development</div>
+  </div>
+</header>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
+  <button class="lang-btn" onclick="setLang('pl')">🇵🇱 Polski</button>
+  <button class="lang-btn" onclick="setLang('de')">🇩🇪 Deutsch</button>
+  <button class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
+  <button class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
+  <button class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button>
+</div>
+
+<div class="content">
+
+  <!-- ═══════════════════════════════════════════════════ ENGLISH -->
+  <div class="section active" id="lang-en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 2026 &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. Who we are</h2>
+    <p>MyRIDE is developed by <strong>RAIDO Development</strong> (Przemysław Rolnik). This Privacy Policy explains how the MyRIDE mobile application handles your data.</p>
+
+    <h2>2. Data collected</h2>
+    <p>MyRIDE collects and stores the following data <strong>exclusively on your device</strong>:</p>
+    <ul>
+      <li>GPS location — used in real time to calculate speed, distance and route while tracking is active</li>
+      <li>Vehicle profiles (type, brand, model, year, mileage)</li>
+      <li>Recorded routes (GPS points, speed, distance, duration)</li>
+      <li>Fuel log entries (litres, cost, odometer reading, fuel type)</li>
+      <li>App settings (language, units, theme)</li>
+    </ul>
+    <p>All data is stored locally using Hive (an embedded database). <strong>No data ever leaves your device.</strong></p>
+
+    <h2>3. How we use your data</h2>
+    <ul>
+      <li>GPS location is processed in real time on your device to compute speed and distance. It is never stored in raw form beyond the current session route points.</li>
+      <li>Vehicle and route data is used exclusively to display statistics within the app.</li>
+      <li>No data is used for advertising, profiling or any purpose other than the app's core functionality.</li>
+    </ul>
+
+    <h2>4. Data sharing</h2>
+    <p>We <strong>do not</strong> share, sell, rent or transmit your data to any third party. There are no analytics services, advertising SDKs or tracking libraries in the app.</p>
+
+    <h2>5. Data export</h2>
+    <p>You can export your data as a JSON file at any time via Settings → Export data. This file is saved to your device and is never uploaded automatically anywhere.</p>
+
+    <h2>6. Data retention &amp; deletion</h2>
+    <p>Data is retained on your device until you delete it. You can:</p>
+    <ul>
+      <li>Delete individual routes in route history</li>
+      <li>Clear all route history via Settings → Clear route history</li>
+      <li>Remove all app data by uninstalling the app</li>
+    </ul>
+
+    <h2>7. Permissions</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — required to determine GPS position while tracking</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — required to keep GPS active when the app is minimised (background tracking)</li>
+      <li><strong>WAKE_LOCK</strong> — optional; keeps the screen on during an active session if enabled by the user</li>
+      <li><strong>INTERNET</strong> — used only to check for app updates and to load map tiles in route history</li>
+    </ul>
+
+    <h2>8. Children's privacy</h2>
+    <p>MyRIDE is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ POLSKI -->
+  <div class="section" id="lang-pl">
+    <h1>Polityka Prywatności</h1>
+    <p class="meta">Ostatnia aktualizacja: czerwiec 2026 &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. Kim jesteśmy</h2>
+    <p>Aplikację MyRIDE tworzy <strong>RAIDO Development</strong> (Przemysław Rolnik). Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób aplikacja mobilna MyRIDE przetwarza Twoje dane.</p>
+
+    <h2>2. Jakie dane zbieramy</h2>
+    <p>MyRIDE gromadzi i przechowuje następujące dane <strong>wyłącznie na Twoim urządzeniu</strong>:</p>
+    <ul>
+      <li>Lokalizacja GPS — używana w czasie rzeczywistym do obliczania prędkości, dystansu i trasy podczas aktywnego śledzenia</li>
+      <li>Profile pojazdów (typ, marka, model, rok, przebieg)</li>
+      <li>Zarejestrowane trasy (punkty GPS, prędkość, dystans, czas)</li>
+      <li>Wpisy paliwa (litry, koszt, przebieg, rodzaj paliwa)</li>
+      <li>Ustawienia aplikacji (język, jednostki, motyw)</li>
+    </ul>
+    <p>Wszystkie dane są przechowywane lokalnie przy użyciu bazy Hive. <strong>Żadne dane nie opuszczają Twojego urządzenia.</strong></p>
+
+    <h2>3. W jaki sposób używamy danych</h2>
+    <ul>
+      <li>Lokalizacja GPS jest przetwarzana w czasie rzeczywistym na urządzeniu wyłącznie w celu obliczenia prędkości i dystansu. Nie jest przesyłana ani zapisywana poza punktami aktualnej trasy.</li>
+      <li>Dane pojazdów i tras służą wyłącznie do wyświetlania statystyk w aplikacji.</li>
+      <li>Żadne dane nie są wykorzystywane do reklam, profilowania ani żadnych innych celów.</li>
+    </ul>
+
+    <h2>4. Udostępnianie danych</h2>
+    <p><strong>Nie</strong> udostępniamy, nie sprzedajemy ani nie przesyłamy Twoich danych żadnym podmiotom trzecim. Aplikacja nie zawiera żadnych usług analitycznych, SDK reklamowych ani bibliotek śledzenia.</p>
+
+    <h2>5. Eksport danych</h2>
+    <p>Możesz w dowolnym momencie wyeksportować swoje dane jako plik JSON przez Ustawienia → Eksportuj dane. Plik jest zapisywany na urządzeniu i nigdy nie jest automatycznie przesyłany.</p>
+
+    <h2>6. Przechowywanie i usuwanie danych</h2>
+    <p>Dane są przechowywane na urządzeniu do momentu ich usunięcia. Możesz:</p>
+    <ul>
+      <li>Usunąć pojedyncze trasy w historii tras</li>
+      <li>Wyczyścić całą historię tras przez Ustawienia → Wyczyść historię tras</li>
+      <li>Usunąć wszystkie dane aplikacji odinstalowując ją</li>
+    </ul>
+
+    <h2>7. Uprawnienia</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — wymagane do określenia pozycji GPS podczas śledzenia</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — wymagane do utrzymania aktywności GPS po zminimalizowaniu aplikacji</li>
+      <li><strong>WAKE_LOCK</strong> — opcjonalne; utrzymuje ekran włączony podczas aktywnej sesji, jeśli włączone przez użytkownika</li>
+      <li><strong>INTERNET</strong> — używane wyłącznie do sprawdzania aktualizacji oraz wczytywania kafelków map w historii tras</li>
+    </ul>
+
+    <h2>8. Prywatność dzieci</h2>
+    <p>Aplikacja MyRIDE nie jest skierowana do dzieci poniżej 13. roku życia i nie zbieramy świadomie danych od dzieci.</p>
+
+    <h2>9. Zmiany polityki</h2>
+    <p>Możemy od czasu do czasu aktualizować niniejszą Politykę Prywatności. Zmiany będą widoczne na tej stronie wraz z nową datą aktualizacji.</p>
+
+    <h2>10. Kontakt</h2>
+    <p>W przypadku pytań dotyczących niniejszej Polityki Prywatności prosimy o kontakt:<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ DEUTSCH -->
+  <div class="section" id="lang-de">
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Zuletzt aktualisiert: Juni 2026 &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. Wer wir sind</h2>
+    <p>MyRIDE wird von <strong>RAIDO Development</strong> (Przemysław Rolnik) entwickelt. Diese Datenschutzerklärung erläutert, wie die mobile App MyRIDE Ihre Daten verarbeitet.</p>
+
+    <h2>2. Erhobene Daten</h2>
+    <p>MyRIDE erfasst und speichert folgende Daten <strong>ausschließlich auf Ihrem Gerät</strong>:</p>
+    <ul>
+      <li>GPS-Standort — wird in Echtzeit zur Berechnung von Geschwindigkeit, Distanz und Route verwendet</li>
+      <li>Fahrzeugprofile (Typ, Marke, Modell, Baujahr, Kilometerstand)</li>
+      <li>Aufgezeichnete Routen (GPS-Punkte, Geschwindigkeit, Distanz, Dauer)</li>
+      <li>Kraftstoffeinträge (Liter, Kosten, Kilometerstand, Kraftstoffart)</li>
+      <li>App-Einstellungen (Sprache, Einheiten, Design)</li>
+    </ul>
+    <p>Alle Daten werden lokal mit Hive gespeichert. <strong>Keine Daten verlassen jemals Ihr Gerät.</strong></p>
+
+    <h2>3. Verwendung der Daten</h2>
+    <ul>
+      <li>GPS-Standort wird in Echtzeit auf dem Gerät verarbeitet, um Geschwindigkeit und Distanz zu berechnen. Er wird nicht übertragen.</li>
+      <li>Fahrzeug- und Routendaten werden ausschließlich zur Anzeige von Statistiken in der App verwendet.</li>
+      <li>Keine Daten werden für Werbung, Profiling oder andere Zwecke verwendet.</li>
+    </ul>
+
+    <h2>4. Datenweitergabe</h2>
+    <p>Wir <strong>geben</strong> Ihre Daten <strong>nicht</strong> an Dritte weiter, verkaufen oder übertragen sie nicht. Die App enthält keine Analysedienste, Werbe-SDKs oder Tracking-Bibliotheken.</p>
+
+    <h2>5. Datenexport</h2>
+    <p>Sie können Ihre Daten jederzeit als JSON-Datei exportieren über Einstellungen → Daten exportieren. Die Datei wird auf Ihrem Gerät gespeichert und wird niemals automatisch hochgeladen.</p>
+
+    <h2>6. Datenspeicherung und Löschung</h2>
+    <p>Daten werden auf Ihrem Gerät gespeichert, bis Sie sie löschen. Sie können:</p>
+    <ul>
+      <li>Einzelne Routen im Routenverlauf löschen</li>
+      <li>Den gesamten Routenverlauf löschen über Einstellungen → Routenverlauf löschen</li>
+      <li>Alle App-Daten durch Deinstallation der App entfernen</li>
+    </ul>
+
+    <h2>7. Berechtigungen</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — erforderlich zur GPS-Positionsbestimmung während der Aufzeichnung</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — erforderlich, um GPS aktiv zu halten, wenn die App minimiert ist</li>
+      <li><strong>WAKE_LOCK</strong> — optional; hält den Bildschirm während einer aktiven Sitzung eingeschaltet</li>
+      <li><strong>INTERNET</strong> — wird nur zur Update-Prüfung und zum Laden von Kartenkacheln verwendet</li>
+    </ul>
+
+    <h2>8. Datenschutz für Kinder</h2>
+    <p>MyRIDE richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern.</p>
+
+    <h2>9. Änderungen dieser Richtlinie</h2>
+    <p>Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht.</p>
+
+    <h2>10. Kontakt</h2>
+    <p>Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie uns unter:<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ FRANÇAIS -->
+  <div class="section" id="lang-fr">
+    <h1>Politique de Confidentialité</h1>
+    <p class="meta">Dernière mise à jour : juin 2026 &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. Qui sommes-nous</h2>
+    <p>MyRIDE est développé par <strong>RAIDO Development</strong> (Przemysław Rolnik). Cette Politique de Confidentialité explique comment l'application mobile MyRIDE traite vos données.</p>
+
+    <h2>2. Données collectées</h2>
+    <p>MyRIDE collecte et stocke les données suivantes <strong>exclusivement sur votre appareil</strong> :</p>
+    <ul>
+      <li>Localisation GPS — utilisée en temps réel pour calculer la vitesse, la distance et le trajet pendant le suivi</li>
+      <li>Profils de véhicules (type, marque, modèle, année, kilométrage)</li>
+      <li>Trajets enregistrés (points GPS, vitesse, distance, durée)</li>
+      <li>Entrées de carburant (litres, coût, kilométrage, type de carburant)</li>
+      <li>Paramètres de l'application (langue, unités, thème)</li>
+    </ul>
+    <p>Toutes les données sont stockées localement avec Hive. <strong>Aucune donnée ne quitte jamais votre appareil.</strong></p>
+
+    <h2>3. Utilisation des données</h2>
+    <ul>
+      <li>La localisation GPS est traitée en temps réel sur votre appareil uniquement pour calculer la vitesse et la distance. Elle n'est pas transmise.</li>
+      <li>Les données de véhicules et de trajets sont utilisées exclusivement pour afficher des statistiques dans l'app.</li>
+      <li>Aucune donnée n'est utilisée à des fins publicitaires, de profilage ou autres.</li>
+    </ul>
+
+    <h2>4. Partage des données</h2>
+    <p>Nous ne <strong>partageons</strong>, ne vendons ni ne transmettons vos données à aucun tiers. L'application ne contient aucun service analytique, SDK publicitaire ou bibliothèque de tracking.</p>
+
+    <h2>5. Export des données</h2>
+    <p>Vous pouvez exporter vos données en fichier JSON à tout moment via Paramètres → Exporter les données. Le fichier est sauvegardé sur votre appareil et n'est jamais téléchargé automatiquement.</p>
+
+    <h2>6. Conservation et suppression des données</h2>
+    <p>Les données sont conservées sur votre appareil jusqu'à leur suppression. Vous pouvez :</p>
+    <ul>
+      <li>Supprimer des trajets individuels dans l'historique</li>
+      <li>Effacer tout l'historique via Paramètres → Effacer l'historique des trajets</li>
+      <li>Supprimer toutes les données en désinstallant l'application</li>
+    </ul>
+
+    <h2>7. Autorisations</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — nécessaire pour la localisation GPS pendant le suivi</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — nécessaire pour maintenir le GPS actif en arrière-plan</li>
+      <li><strong>WAKE_LOCK</strong> — optionnel ; maintient l'écran allumé pendant une session active</li>
+      <li><strong>INTERNET</strong> — utilisé uniquement pour vérifier les mises à jour et charger les tuiles de carte</li>
+    </ul>
+
+    <h2>8. Confidentialité des enfants</h2>
+    <p>MyRIDE n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données d'enfants.</p>
+
+    <h2>9. Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps en temps. Les modifications seront publiées sur cette page avec une date mise à jour.</p>
+
+    <h2>10. Contact</h2>
+    <p>Pour toute question concernant cette Politique de Confidentialité :<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ ESPAÑOL -->
+  <div class="section" id="lang-es">
+    <h1>Política de Privacidad</h1>
+    <p class="meta">Última actualización: junio de 2026 &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. Quiénes somos</h2>
+    <p>MyRIDE es desarrollado por <strong>RAIDO Development</strong> (Przemysław Rolnik). Esta Política de Privacidad explica cómo la aplicación móvil MyRIDE maneja sus datos.</p>
+
+    <h2>2. Datos recopilados</h2>
+    <p>MyRIDE recopila y almacena los siguientes datos <strong>exclusivamente en su dispositivo</strong>:</p>
+    <ul>
+      <li>Ubicación GPS — utilizada en tiempo real para calcular velocidad, distancia y ruta durante el seguimiento</li>
+      <li>Perfiles de vehículos (tipo, marca, modelo, año, kilometraje)</li>
+      <li>Rutas registradas (puntos GPS, velocidad, distancia, duración)</li>
+      <li>Entradas de combustible (litros, coste, kilometraje, tipo de combustible)</li>
+      <li>Ajustes de la aplicación (idioma, unidades, tema)</li>
+    </ul>
+    <p>Todos los datos se almacenan localmente con Hive. <strong>Ningún dato abandona jamás su dispositivo.</strong></p>
+
+    <h2>3. Uso de los datos</h2>
+    <ul>
+      <li>La ubicación GPS se procesa en tiempo real en su dispositivo solo para calcular velocidad y distancia. No se transmite.</li>
+      <li>Los datos de vehículos y rutas se usan exclusivamente para mostrar estadísticas en la app.</li>
+      <li>Ningún dato se usa para publicidad, perfiles u otros fines.</li>
+    </ul>
+
+    <h2>4. Compartición de datos</h2>
+    <p><strong>No</strong> compartimos, vendemos ni transmitimos sus datos a terceros. La aplicación no contiene servicios de análisis, SDK publicitarios ni bibliotecas de seguimiento.</p>
+
+    <h2>5. Exportación de datos</h2>
+    <p>Puede exportar sus datos como archivo JSON en cualquier momento desde Ajustes → Exportar datos. El archivo se guarda en su dispositivo y nunca se sube automáticamente.</p>
+
+    <h2>6. Conservación y eliminación de datos</h2>
+    <p>Los datos se conservan en su dispositivo hasta que los elimine. Puede:</p>
+    <ul>
+      <li>Eliminar rutas individuales en el historial</li>
+      <li>Borrar todo el historial desde Ajustes → Borrar historial de rutas</li>
+      <li>Eliminar todos los datos desinstalando la aplicación</li>
+    </ul>
+
+    <h2>7. Permisos</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — necesario para la ubicación GPS durante el seguimiento</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — necesario para mantener el GPS activo en segundo plano</li>
+      <li><strong>WAKE_LOCK</strong> — opcional; mantiene la pantalla encendida durante una sesión activa</li>
+      <li><strong>INTERNET</strong> — utilizado solo para verificar actualizaciones y cargar teselas de mapa</li>
+    </ul>
+
+    <h2>8. Privacidad de menores</h2>
+    <p>MyRIDE no está dirigido a menores de 13 años. No recopilamos datos de menores de forma consciente.</p>
+
+    <h2>9. Cambios en esta política</h2>
+    <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Los cambios se publicarán en esta página con una fecha actualizada.</p>
+
+    <h2>10. Contacto</h2>
+    <p>Si tiene preguntas sobre esta Política de Privacidad, contáctenos en:<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ РУССКИЙ -->
+  <div class="section" id="lang-ru">
+    <h1>Политика конфиденциальности</h1>
+    <p class="meta">Последнее обновление: июнь 2026 г. &nbsp;·&nbsp; MyRIDE v1.6+</p>
+    <div class="badge">Privacy by Design</div>
+
+    <h2>1. О нас</h2>
+    <p>MyRIDE разработан компанией <strong>RAIDO Development</strong> (Przemysław Rolnik). Настоящая Политика конфиденциальности объясняет, как мобильное приложение MyRIDE обрабатывает ваши данные.</p>
+
+    <h2>2. Собираемые данные</h2>
+    <p>MyRIDE собирает и хранит следующие данные <strong>исключительно на вашем устройстве</strong>:</p>
+    <ul>
+      <li>Геолокация GPS — используется в реальном времени для расчёта скорости, расстояния и маршрута во время записи</li>
+      <li>Профили транспортных средств (тип, марка, модель, год, пробег)</li>
+      <li>Записанные маршруты (точки GPS, скорость, расстояние, время)</li>
+      <li>Записи о заправках (литры, стоимость, пробег, тип топлива)</li>
+      <li>Настройки приложения (язык, единицы измерения, тема)</li>
+    </ul>
+    <p>Все данные хранятся локально с помощью Hive. <strong>Никакие данные никогда не покидают ваше устройство.</strong></p>
+
+    <h2>3. Использование данных</h2>
+    <ul>
+      <li>Геолокация GPS обрабатывается в реальном времени на устройстве исключительно для расчёта скорости и расстояния. Она не передаётся.</li>
+      <li>Данные о ТС и маршрутах используются исключительно для отображения статистики в приложении.</li>
+      <li>Никакие данные не используются в рекламных, профилировочных или иных целях.</li>
+    </ul>
+
+    <h2>4. Передача данных</h2>
+    <p>Мы <strong>не передаём</strong>, не продаём и не пересылаем ваши данные третьим лицам. Приложение не содержит аналитических сервисов, рекламных SDK или библиотек отслеживания.</p>
+
+    <h2>5. Экспорт данных</h2>
+    <p>Вы можете в любое время экспортировать данные в формате JSON через Настройки → Экспорт данных. Файл сохраняется на устройстве и никогда не загружается автоматически.</p>
+
+    <h2>6. Хранение и удаление данных</h2>
+    <p>Данные хранятся на вашем устройстве до их удаления. Вы можете:</p>
+    <ul>
+      <li>Удалить отдельные маршруты в истории</li>
+      <li>Очистить всю историю через Настройки → Очистить историю маршрутов</li>
+      <li>Удалить все данные, удалив приложение</li>
+    </ul>
+
+    <h2>7. Разрешения</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</strong> — необходимо для определения позиции GPS во время записи</li>
+      <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION</strong> — необходимо для поддержания активности GPS в фоновом режиме</li>
+      <li><strong>WAKE_LOCK</strong> — опционально; удерживает экран включённым во время активной сессии</li>
+      <li><strong>INTERNET</strong> — используется только для проверки обновлений и загрузки тайлов карты</li>
+    </ul>
+
+    <h2>8. Конфиденциальность детей</h2>
+    <p>MyRIDE не предназначен для детей до 13 лет. Мы сознательно не собираем данные детей.</p>
+
+    <h2>9. Изменения политики</h2>
+    <p>Мы можем периодически обновлять настоящую Политику конфиденциальности. Изменения будут отражены на этой странице с обновлённой датой.</p>
+
+    <h2>10. Контакты</h2>
+    <p>По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь:<br>
+    <a href="mailto:przemyslaw.rolnik1985@gmail.com">przemyslaw.rolnik1985@gmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  MyRIDE &nbsp;·&nbsp; RAIDO Development &nbsp;·&nbsp; Privacy by Design &nbsp;·&nbsp; Data on device only
+</footer>
+
+<script>
+  function setLang(code) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + code).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Auto-detect browser language
+  const lang = navigator.language.split('-')[0];
+  const supported = ['pl','de','fr','es','ru'];
+  if (supported.includes(lang)) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelector(`[onclick="setLang('${lang}')"]`).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
